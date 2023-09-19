@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9de35b3fbd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Hodlinfo</title>
+</head>
+<body>
+
+    <div id="root" class="dark">
+
+        <nav>
+            <li class="logo">
+                <!-- <img src="logo_light.PNG" alt=""> -->
+                <img src="HODLINFO.png" />
+            </li>
+            <li class="controls">
+                <div>INR <i class="fa-solid fa-sort-down"></i></div>
+                <div>BTC <i class="fa-solid fa-sort-down"></i></div>
+                <div>BUY BTC</div>
+            </li>
+            <li class="action">
+                <div class="countdown">60</div>
+                <button class="telegram"><i class="fa-solid fa-paper-plane"></i> Connect Telegram</button>
+                <div class="switch on"><span></span></div>
+            </li>
+        </nav>
+
+        <div class="average-header">
+            <div>
+                <div class="main-text">1.99%</div>
+                <div class="subheading">5 Mins</div>
+            </div>
+            <div>
+                <div class="main-text">1.44%</div>
+                <div class="subheading">1 Hour</div>
+            </div>
+            <div>
+                <div class="average-subtext">Best Price to Trade</div>
+                <div class="average-heading">₹ 24,57,983</div>
+                <div class="average-subheading">Average BTC/INR net price including commission</div>
+            </div>
+            <div>
+                <div class="main-text">6.21%</div>
+                <div class="subheading">1 Day</div>
+            </div>
+            <div>
+                <div class="main-text">10.5%</div>
+                <div class="subheading">7 Days</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Platform</th>
+                        <th>Currencies</th>
+                        <th>Last Traded Price</th>
+                        <th class="buy-sell">Buy / Sell Price</th>
+                        <th>Volume</th>
+                        <!-- <th>Base Unit</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <template id="table-row-template">
+                        <tr>
+                            <td>6</td>
+                            <td><img src="wazirx_logo.png"/> WazirX</td>
+                            <td>₹ 23,27,001</td>
+                            <td>-5.33 %</td>
+                            <td class="buy-sell">₹ 23,27,001 / ₹ 23,45,899</td>
+                            <td>▼ ₹ 1,30,982</td>
+                            <!-- <td>▼ ₹ 1,30,982</td> -->
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Copyright © 2019</p>
+            <p>HodlInfo.com</p>
+            <p class="right">Support</p>
+        </footer>
+        <div class="fixed">
+            <button>Add hodlinfo to home screen</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
